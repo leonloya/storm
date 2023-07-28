@@ -34,13 +34,27 @@
             width: 100%;
         } 
         
-        #box {
+
+         #box {
       width: 100px;
       height: 100px;
       background-image: url('monkey.png');
       background-size: cover;
       position: absolute;
+      bottom: 20px; /* La altura del piso */
     }
+
+
+
+ #floor {
+      width: 100%;
+      height: 20px;
+      background-color: #333;
+      position: absolute;
+      bottom: 0;
+
+        
+        
     </style>
 </head>
 <body>
@@ -56,8 +70,9 @@
 
         <h1>Juego Simple</h1>
   <p>¡Haz clic en el cuadro verde para ganar puntos!</p>
+ <div id="floor"></div>        
   <div id="box"></div>
-
+        
         <p>Puntaje: <span id="score">0</span></p>
 
   <script src="script.js"></script>    </main>
